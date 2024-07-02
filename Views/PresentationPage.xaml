@@ -5,6 +5,28 @@
              Shell.NavBarIsVisible="False"
              Title="PresentationPage">
     <VerticalStackLayout Padding="5">
-        
+        <Frame Padding="8" BorderColor="DarkGray" CornerRadius="10" HasShadow="True">
+            <VerticalStackLayout>
+                <Label Margin="0,0,0,10" Text="Welcome to Pluralsight" />
+                <BoxView
+                    HeightRequest="4"
+                    HorizontalOptions="Fill"
+                    Color="Gray" />
+                <Ellipse
+                    Margin="0,14,0,10"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    Stroke="Red"
+                    StrokeThickness="4"
+                    WidthRequest="150">
+                    <Ellipse.Background>
+                        <RadialGradientBrush>
+                            <GradientStop Offset="0.1" Color="Red" />
+                            <GradientStop Offset="1.0" Color="LightPink" />
+                        </RadialGradientBrush>
+                    </Ellipse.Background>
+                </Ellipse>
+            </VerticalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
